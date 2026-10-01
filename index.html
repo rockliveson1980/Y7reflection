@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Year 7 Unit 1: Diagnostic Review & Feedback</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .topic-checkbox:checked + div {
+            border-color: #4f46e5;
+            background-color: #eef2ff;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen pb-12">
+
+    <!-- Header -->
+    <header class="bg-indigo-700 text-white shadow-lg py-6 px-4 mb-8">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-2xl font-bold">Year 7 Unit 1: Topic Review & Diagnostic</h1>
+            <p class="text-indigo-200 text-sm mt-1">Select the areas you struggled with to unlock targeted examples and practice questions.</p>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4">
+        
+        <!-- Checklist Form -->
+        <div id="selection-card" class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 mb-8">
+            <h2 class="text-lg font-bold text-slate-800 mb-2">Self-Assessment Checklist</h2>
+            <p class="text-sm text-slate-600 mb-4">Tick the boxes for any questions or topics you lost marks on in your test:</p>
+
+            <form id="topic-form" class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-6">
+                <!-- Checkbox Items -->
+                <label class="cursor-pointer relative">
+                    <input type="checkbox" value="0" class="topic-checkbox sr-only">
+                    <div class="p-3 rounded-lg border border-slate-200 bg-slate-50 hover:bg-slate-100 transition text-sm flex items-start gap-3">
+                        <span class="font-bold text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded border border-indigo-100 text-xs">Q1</span>
+                        <div>
+                            <p class="font-semibold text-slate-800">Place Value, Ordering & Inequalities</p>
+                            <p class="text-xs text-slate-500">Words, digit value, ascending order, comparison symbols (&lt;, &gt;)</p>
+                        </div>
+                    </div>
+                </label>
+
+                <label class="cursor-pointer relative">
+                    <input type="checkbox" value="1" class="topic-checkbox sr-only">
+                    <div class="p-3 rounded-lg border border-slate-200 bg-slate-50 hover:bg-slate-100 transition text-sm flex items-start gap-3">
+                        <span class="font-bold text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded border border-indigo-100 text-xs">Q2</span>
+                        <div>
+                            <p class="font-semibold text-slate-800">Negative Numbers & Set Notation</p>
+                            <p class="text-xs text-slate-500">Temperature rises, number line reasoning, -2 &lt; n &le; 2</p>
+                        </div>
+                    </div>
+                </label>
+
+                <label class="cursor-pointer relative">
+                    <input type="checkbox" value="2" class="topic-checkbox sr-only">
+                    <div class="p-3 rounded-lg border border-slate-200 bg-slate-50 hover:bg-slate-100 transition text-sm flex items-start gap-3">
+                        <span class="font-bold text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded border border-indigo-100 text-xs">Q3</span>
+                        <div>
+                            <p class="font-semibold text-slate-800">Addition & Subtraction in Context</p>
+                            <p class="text-xs text-slate-500">Multi-digit algorithms, seating availability, bank balances</p>
+                        </div>
+                    </div>
+                </label>
+
+                <label class="cursor-pointer relative">
+                    <input type="checkbox" value="3" class="topic-checkbox sr-only">
+                    <div class="p-3 rounded-lg border border-slate-200 bg-slate-50 hover:bg-slate-100 transition text-sm flex items-start gap-3">
+                        <span class="font-bold text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded border border-indigo-100 text-xs">Q4</span>
+                        <div>
+                            <p class="font-semibold text-slate-800">Multiplication & Long Division</p>
+                            <p class="text-xs text-slate-500">Standard column multiplication, multi-digit division</p>
+                        </div>
+                    </div>
+                </label>
+
+                <label class="cursor-pointer relative">
+                    <input type="checkbox" value="4" class="topic-checkbox sr-only">
+                    <div class="p-3 rounded-lg border border-slate-200 bg-slate-50 hover:bg-slate-100 transition text-sm flex items-start gap-3">
+                        <span class="font-bold text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded border border-indigo-100 text-xs">Q5</span>
+                        <div>
+                            <p class="font-semibold text-slate-800">Order of Operations (BIDMAS)</p>
+                            <p class="text-xs text-slate-500">Operation precedence, indices in sums, inserting brackets</p>
+                        </div>
+                    </div>
+                </label>
+
+                <label class="cursor-pointer relative">
+                    <input type="checkbox" value="5" class="topic-checkbox sr-only">
+                    <div class="p-3 rounded-lg border border-slate-200 bg-slate-50 hover:bg-slate-100 transition text-sm flex items-start gap-3">
+                        <span class="font-bold text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded border border-indigo-100 text-xs">Q6</span>
+                        <div>
+                            <p class="font-semibold text-slate-800">Powers, Roots & Inverse Operations</p>
+                            <p class="text-xs text-slate-500">Index form, evaluating powers, square roots, inverse equations</p>
+                        </div>
+                    </div>
+                </label>
+
+                <label class="cursor-pointer relative">
+                    <input type="checkbox" value="6" class="topic-checkbox sr-only">
+                    <div class="p-3 rounded-lg border border-slate-200 bg-slate-50 hover:bg-slate-100 transition text-sm flex items-start gap-3">
+                        <span class="font-bold text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded border border-indigo-100 text-xs">Q7</span>
+                        <div>
+                            <p class="font-semibold text-slate-800">Unit Conversions</p>
+                            <p class="text-xs text-slate-500">m to cm, g to kg, hours & minutes to minutes, km to m</p>
+                        </div>
+                    </div>
+                </label>
+
+                <label class="cursor-pointer relative">
+                    <input type="checkbox" value="7" class="topic-checkbox sr-only">
+                    <div class="p-3 rounded-lg border border-slate-200 bg-slate-50 hover:bg-slate-100 transition text-sm flex items-start gap-3">
+                        <span class="font-bold text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded border border-indigo-100 text-xs">Q8</span>
+                        <div>
+                            <p class="font-semibold text-slate-800">Scale Diagrams & Measures</p>
+                            <p class="text-xs text-slate-500">1:50 scales, finding actual length, width, and room perimeter</p>
+                        </div>
+                    </div>
+                </label>
+
+                <label class="cursor-pointer relative md:col-span-2">
+                    <input type="checkbox" value="8" class="topic-checkbox sr-only">
+                    <div class="p-3 rounded-lg border border-slate-200 bg-slate-50 hover:bg-slate-100 transition text-sm flex items-start gap-3">
+                        <span class="font-bold text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded border border-indigo-100 text-xs">Q9</span>
+                        <div>
+                            <p class="font-semibold text-slate-800">Multi-Step Real-World Problem Solving</p>
+                            <p class="text-xs text-slate-500">Coach capacity division, rounding up, total hire costs, budgeting</p>
+                        </div>
+                    </div>
+                </label>
+            </form>
+
+            <button onclick="generateTargetedReview()" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg transition shadow">
+                Generate Custom Practice Material
+            </button>
+        </div>
+
+        <!-- Targeted Review Output Area -->
+        <div id="review-output" class="space-y-8"></div>
+
+    </main>
+
+    <script>
+        const reviewDatabase = [
+            {
+                title: "Question 1: Place Value, Ordering & Inequalities",
+                example: "<strong>Worked Example:</strong> Arrange 12, -7, 0, -3, 5 in ascending order.<br><em>Solution:</em> Smaller negative numbers have larger absolute values: <strong>-7, -3, 0, 5, 12</strong>.",
+                questions: [
+                    {
+                        q: "Write <strong>604,082</strong> in words.",
+                        a: "Six hundred and four thousand, eighty-two"
+                    },
+                    {
+                        q: "Which symbol fills the box? &nbsp; <strong>-8 &nbsp; &square; &nbsp; -3</strong>",
+                        a: "&lt; (because -8 is further left on the number line)"
+                    }
+                ]
+            },
+            {
+                title: "Question 2: Negative Numbers & Inequalities",
+                example: "<strong>Worked Example:</strong> Temperature is -4&deg;C and rises by 7&deg;C. <br><em>Solution:</em> -4 + 7 = <strong>3&deg;C</strong>.",
+                questions: [
+                    {
+                        q: "Calculate: <strong>6 - 14</strong>",
+                        a: "-8"
+                    },
+                    {
+                        q: "List all whole numbers <i>n</i> satisfying <strong>-3 &lt; <i>n</i> &le; 1</strong>.",
+                        a: "-2, -1, 0, 1"
+                    }
+                ]
+            },
+            {
+                title: "Question 3: Addition & Subtraction in Context",
+                example: "<strong>Worked Example:</strong> A bank balance is &pound;90. A withdrawal of &pound;135 is made. <br><em>Solution:</em> 90 - 135 = <strong>-&pound;45</strong>.",
+                questions: [
+                    {
+                        q: "Calculate: <strong>53,924 + 6,887</strong>",
+                        a: "60,811"
+                    },
+                    {
+                        q: "Calculate: <strong>70,000 - 34,281</strong>",
+                        a: "35,719"
+                    }
+                ]
+            },
+            {
+                title: "Question 4: Multiplication & Long Division",
+                example: "<strong>Worked Example:</strong> 720 books packed into boxes of 24.<br><em>Solution:</em> 720 &divide; 24 = <strong>30 boxes</strong>.",
+                questions: [
+                    {
+                        q: "Calculate: <strong>264 &times; 32</strong>",
+                        a: "8,448"
+                    },
+                    {
+                        q: "Calculate: <strong>3,888 &divide; 18</strong>",
+                        a: "216"
+                    }
+                ]
+            },
+            {
+                title: "Question 5: Order of Operations (BIDMAS)",
+                example: "<strong>Worked Example:</strong> Insert brackets into 4 + 3 &times; 5 = 35.<br><em>Solution:</em> <strong>(4 + 3) &times; 5 = 35</strong>.",
+                questions: [
+                    {
+                        q: "Calculate: <strong>9 + 3 &times; 8</strong>",
+                        a: "33 (multiplication before addition)"
+                    },
+                    {
+                        q: "Calculate: <strong>5<sup>2</sup> + 6 &times; 2</strong>",
+                        a: "37 (indices first: 25 + 12)"
+                    }
+                ]
+            },
+            {
+                title: "Question 6: Powers, Roots & Inverse Operations",
+                example: "<strong>Worked Example:</strong> Solve 14 &times; &square; = 196.<br><em>Solution:</em> &square; = 196 &divide; 14 = <strong>14</strong>.",
+                questions: [
+                    {
+                        q: "Evaluate: <strong>2<sup>6</sup></strong>",
+                        a: "64"
+                    },
+                    {
+                        q: "Find: <strong>&radic;121</strong>",
+                        a: "11"
+                    }
+                ]
+            },
+            {
+                title: "Question 7: Unit Conversions",
+                example: "<strong>Worked Example:</strong> Convert 4.2 km to metres.<br><em>Solution:</em> 4.2 &times; 1000 = <strong>4200 m</strong>.",
+                questions: [
+                    {
+                        q: "Convert <strong>5.2 m</strong> to <strong>cm</strong>.",
+                        a: "520 cm"
+                    },
+                    {
+                        q: "Convert <strong>3 hours 20 minutes</strong> into total minutes.",
+                        a: "200 minutes (180 + 20)"
+                    }
+                ]
+            },
+            {
+                title: "Question 8: Scale Diagrams & Perimeter",
+                example: "<strong>Worked Example:</strong> Scale 1:50, drawing length 6 cm.<br><em>Solution:</em> 6 &times; 50 = 300 cm = <strong>3 m</strong>.",
+                questions: [
+                    {
+                        q: "Scale 1:50. Drawing width is 5 cm. Find actual width in metres.",
+                        a: "2.5 m (5 &times; 50 = 250 cm = 2.5 m)"
+                    },
+                    {
+                        q: "A rectangular room drawing (scale 1:50) is 8 cm long and 4 cm wide. Find the actual perimeter in metres.",
+                        a: "12 m (Actual length = 4m, actual width = 2m. Perimeter = 2 &times; (4 + 2) = 12m)"
+                    }
+                ]
+            },
+            {
+                title: "Question 9: Multi-Step Real-World Problem Solving",
+                example: "<strong>Worked Example:</strong> 130 people need mini-buses carrying 15 each.<br><em>Solution:</em> 130 &divide; 15 = 8.66 &rightarrow; <strong>9 mini-buses required</strong>.",
+                questions: [
+                    {
+                        q: "204 students and 16 teachers go on a trip. Buses hold 50. How many buses are needed?",
+                        a: "5 buses (Total = 220 people. 220 &divide; 50 = 4.4 &rightarrow; round up to 5)"
+                    },
+                    {
+                        q: "Each bus costs &pound;350. Budget is &pound;2,000. How much budget remains after paying for 5 buses?",
+                        a: "&pound;250 (5 &times; 350 = &pound;1750. &pound;2000 - &pound;1750 = &pound;250)"
+                    }
+                ]
+            }
+        ];
+
+        function generateTargetedReview() {
+            const checkboxes = document.querySelectorAll('.topic-checkbox:checked');
+            const output = document.getElementById('review-output');
+            output.innerHTML = '';
+
+            if (checkboxes.length === 0) {
+                alert("Please check at least one topic box to generate your review!");
+                return;
+            }
+
+            checkboxes.forEach(cb => {
+                const topicIdx = parseInt(cb.value);
+                const data = reviewDatabase[topicIdx];
+
+                const card = document.createElement('div');
+                card.className = "bg-white p-6 rounded-xl shadow-sm border border-indigo-100";
+
+                let html = `
+                    <h3 class="text-xl font-bold text-indigo-900 border-b border-indigo-50 pb-2 mb-4">${data.title}</h3>
+                    <div class="bg-indigo-50 p-4 rounded-lg text-sm text-indigo-900 border border-indigo-100 mb-6">${data.example}</div>
+                    <div class="space-y-4">
+                        <h4 class="font-bold text-slate-700 text-sm uppercase tracking-wider">Practice Questions:</h4>
+                `;
+
+                data.questions.forEach((qItem, qIdx) => {
+                    html += `
+                        <div class="p-4 bg-slate-50 rounded-lg border border-slate-200">
+                            <p class="font-medium text-slate-800 mb-2">${qIdx + 1}. ${qItem.q}</p>
+                            <details class="mt-2 text-sm text-slate-600">
+                                <summary class="cursor-pointer font-semibold text-indigo-600 hover:text-indigo-800 transition">Show Answer & Explanation</summary>
+                                <div class="mt-2 p-3 bg-white rounded border border-slate-200 font-medium text-emerald-800 bg-emerald-50 border-emerald-200">
+                                    ${qItem.a}
+                                </div>
+                            </details>
+                        </div>
+                    `;
+                });
+
+                html += `</div>`;
+                card.innerHTML = html;
+                output.appendChild(card);
+            });
+
+            output.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
